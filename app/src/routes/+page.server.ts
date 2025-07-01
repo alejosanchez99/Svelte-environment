@@ -3,6 +3,7 @@ import type { PageServerLoad } from './$types';
 
 export const load: PageServerLoad = () => {
 	return {
-		secret: env.SECRET_KEY
+		secret: env.SECRET_KEY,
+        secretKeyVault: env.SECRET_KEY_VAULT
 	};
 };
